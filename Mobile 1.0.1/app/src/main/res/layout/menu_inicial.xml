@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar_menu_inicial"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+
+                    <!-- Caixa 1 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ESPECIE"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 2 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TIPO"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 3 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PLANTADO EM"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PREVISÃO DE COLHEITA"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 5 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QUANTIDADE DE AGUA"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 6 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INTENSIDADE LUZ"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 7 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HUMIDADE SOLO"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <!-- Caixa 8 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TEMPERATURA AMBIENTE"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linha adicional"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </GridLayout>
+
+                <!-- Caixa 9 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_background"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Caixa 9"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Linha adicional"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/menu_inicial_drawer"/>
+</androidx.drawerlayout.widget.DrawerLayout>

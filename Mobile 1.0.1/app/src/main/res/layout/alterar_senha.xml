@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/redefinirsenha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner1"
+    tools:context=".AlterarSenhaActivity">
+
+    <View
+        android:id="@+id/containerLogin"
+        android:layout_width="350dp"
+        android:layout_height="530dp"
+        android:layout_marginHorizontal="28dp"
+        android:background="@drawable/container_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redefinir senha"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toTopOf="@id/containerLogin"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/txtDesconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrada de dados"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/container_text_login"
+        android:padding="15dp"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/txtDesconto"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"/>
+
+
+    <EditText
+        android:id="@+id/numerodd"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="DD"
+        android:background="@drawable/container_text_login"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="60dp"/>
+
+
+    <EditText
+        android:id="@+id/numeroSP"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="SP"
+        android:background="@drawable/container_text_login"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="60dp"/>
+
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Zap"
+        android:background="@drawable/container_text_login"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/numerodd"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"/>
+
+
+    <Button
+        android:id="@+id/btngerarcodigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gerar Codigo"
+        android:background="@drawable/container_text_login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/numero"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="40dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
